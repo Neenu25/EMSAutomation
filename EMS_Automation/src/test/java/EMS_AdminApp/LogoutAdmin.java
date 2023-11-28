@@ -1,12 +1,13 @@
 package EMS_AdminApp;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 public class LogoutAdmin {
 	
@@ -41,11 +42,11 @@ public class LogoutAdmin {
 				String loginStatus2 = driver.findElement(By.id("toast-container")).getText();
 				if (successMessage.equals(loginStatus2)) {
 					
-					System.out.println("Login Success");
+					System.out.println("Login Success"+loginStatus2);
 					
 				}
 				else {
-					System.out.println("Login Failed");
+					System.out.println("Login Failed"+loginStatus2);
 					
 				}
 				

@@ -1,17 +1,21 @@
 package EMS_AdminApp;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 public class UseraccountPageAdmin {
+	
+	
 WebDriver driver;
 	
 	@BeforeMethod
 	
 	public void setup() throws InterruptedException {
+		
 		driver = new ChromeDriver();
 		driver.get("http://admin-panel-staging-ebay.s3-website-ap-northeast-1.amazonaws.com/auth/home");
 		driver.manage().window().maximize();

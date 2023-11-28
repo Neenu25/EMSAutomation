@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  
+	  <classes>
+		  
+      <class name ="EMS_AdminApp.AdminLogin"/>
+      <class name ="EMS_AdminApp.LogoutAdmin"/>
+       <class name ="EMS_AdminApp.RedirectionAdmin"/>
+        <class name ="EMS_AdminApp.UseraccountPageAdmin"/>
+         <class name ="EMS_UserApp.UserLogin"/>
+         <class name ="EMS_UserApp.UserLogout"/>
+         <class name ="EMS_UserApp.UserRedirection"/>
+         <class name ="EMS_UserApp.UserTopSeller"/>
+         <class name ="EMS_UserApp.SimpleScraping"/>
+     
+     
+      
+    </classes>
+	  
+	  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,12 +1,13 @@
 package EMS_UserApp;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 public class SimpleScraping {
 	
@@ -503,15 +504,12 @@ public class SimpleScraping {
                
              break;
              
-             
-       
-             
-             
+           
          default:
              System.out.println("Icon not found.");
      	}
      
-    // driver.quit();
+     driver.quit();
      
      }
 	 

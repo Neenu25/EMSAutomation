@@ -3,6 +3,63 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="EMS_UserApp.UserTopSeller">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="verifySortingCategoryInTopSeller"/>
+        </methods>
+      </class> <!-- EMS_UserApp.UserTopSeller -->
+      <class name="EMS_UserApp.UserPasswordReset">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyWeCanUpdatePassword"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- EMS_UserApp.UserPasswordReset -->
+      <class name="EMS_UserApp.DetailedScrapping">
+        <methods>
+          <include name="setup"/>
+          <include name="switchlocators"/>
+        </methods>
+      </class> <!-- EMS_UserApp.DetailedScrapping -->
+      <class name="EMS_UserApp.UserLogout">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="verifyLoginandthenLogout"/>
+        </methods>
+      </class> <!-- EMS_UserApp.UserLogout -->
+      <class name="EMS_UserApp.SimpleScraping">
+        <methods>
+          <include name="setup"/>
+          <include name="switchlocators"/>
+        </methods>
+      </class> <!-- EMS_UserApp.SimpleScraping -->
+      <class name="EMS_AdminApp.LogoutAdmin">
+        <methods>
+          <include name="logOut"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- EMS_AdminApp.LogoutAdmin -->
+      <class name="EMS_AdminApp.AdminLogin">
+        <methods>
+          <include name="testcase4"/>
+          <include name="testcase1"/>
+          <include name="testcase3"/>
+          <include name="setup"/>
+          <include name="testcase5"/>
+          <include name="testcase2"/>
+        </methods>
+      </class> <!-- EMS_AdminApp.AdminLogin -->
+      <class name="EMS_AdminApp.RedirectionAdmin">
+        <methods>
+          <include name="profileIconsettingsredirections"/>
+          <include name="setup"/>
+          <include name="redirectionsadmin"/>
+          <include name="profileiconredirections"/>
+        </methods>
+      </class> <!-- EMS_AdminApp.RedirectionAdmin -->
       <class name="EMS_UserApp.UserRedirection">
         <methods>
           <include name="teardown"/>
@@ -10,6 +67,25 @@
           <include name="setup"/>
         </methods>
       </class> <!-- EMS_UserApp.UserRedirection -->
+      <class name="EMS_UserApp.UserLogin">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="verifyLoginwithInvalidUsernameInvalidPassword"/>
+          <include name="verifyLoginwithvalidUsernameInvalidPassword"/>
+          <include name="verifyLoginWithValidInputs"/>
+          <include name="verifyLoginwithNoInputs"/>
+          <include name="verifyLoginwithInvalidUsernameValidPassword"/>
+        </methods>
+      </class> <!-- EMS_UserApp.UserLogin -->
+      <class name="EMS_AdminApp.UseraccountPageAdmin">
+        <methods>
+          <include name="Usersearch"/>
+          <include name="activationShowUser"/>
+          <include name="userAccount"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- EMS_AdminApp.UseraccountPageAdmin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
